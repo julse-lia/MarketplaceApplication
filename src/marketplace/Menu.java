@@ -221,7 +221,7 @@ public class Menu {
     }
 
     public static void addUser(String name, String lastname, float amountOfMoney) {
-        if (name != null && !name.trim().isEmpty() && lastname != null && !lastname.trim().isEmpty() && !(amountOfMoney < 0)) {
+        if (name != null && !name.isBlank() && lastname != null && !lastname.isBlank() && !(amountOfMoney < 0)) {
             User user = new User();
             user.setId(userIdCount);
             user.setName(name);
@@ -237,7 +237,7 @@ public class Menu {
     }
 
     public static void addProduct(String name, float price) {
-        if (name != null && !name.trim().isEmpty() && !(price <= 0)) {
+        if (name != null && !name.isBlank() && !(price <= 0)) {
             Product product = new Product();
             product.setId(productIdCount);
             product.setName(name);

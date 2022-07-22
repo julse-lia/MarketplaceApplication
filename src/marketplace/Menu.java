@@ -2,7 +2,7 @@ package marketplace;
 
 import java.util.*;
 
-public class Menu {
+class Menu {
     private static ArrayList<Product> products = new ArrayList<Product>();
     private static ArrayList<User> users = new ArrayList<User>();
     private static HashMap<User, ArrayList<Product>> userProducts = new HashMap<User, ArrayList<Product>>();

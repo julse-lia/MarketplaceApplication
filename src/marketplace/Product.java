@@ -1,6 +1,6 @@
 package marketplace;
 
-public class Product {
+class Product {
     private int id;
     private String name;
     private float price;
